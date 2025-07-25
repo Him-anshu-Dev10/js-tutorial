@@ -43,9 +43,9 @@ undefined value is declared but not defined*/
 // let Age = Number(age);
 // // console.table([typeof Age, Age]); for true the value is = 1 and fales it is 0
 
-// let isLoggedIn = 3;
-// let NewLogin = Boolean(isLoggedIn);
-// console.table([NewLogin]);
+let isLoggedIn = undefined;
+let NewLogin = Boolean(isLoggedIn);
+console.table([NewLogin]);
 
 // true => true
 // "" =>false

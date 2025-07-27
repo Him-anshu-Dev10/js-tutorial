@@ -32,3 +32,7 @@ console.table([kalu.email, ramu.email]);
 //summery
 // when we change in primitive data types the copy of the variable is changed
 // but when we change in non primitive data types it changes in actual value ///
+
+//String
+
+// const newGame = new String("Himanshu");

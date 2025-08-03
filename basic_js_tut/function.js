@@ -62,6 +62,6 @@ let user = {
   console.log("hello");
 })();
 
-(() => {
-  console.log("part twoss");
-})();
+((name) => {
+  console.log(name);
+})("HImy");

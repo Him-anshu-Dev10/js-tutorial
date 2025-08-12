@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+</head>
+
+<body>
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div> -->
+
+
+    <ul class="language">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    //const head = document.querySelector(".parent")
+    //   console.log(head)
+    // console.log(head.children[1].innerHTML)
+
+    //for (let i = 0; i < head.children.length; i++) {
+    //  console.log(head.children[i].innerHTML)
+    //head.children[i].style.color = "orange"
+    //}
+
+
+    //  <!-- let child = document.querySelector(".day")
+    // console.log(child.parentElement.innerHTML)
+    //console.log(child.nextElementSibling.innerHTML)   -->
+
+
+
+
+    //for add an element
+
+    //let himu = (addlang) => {
+    //  const li = document.createElement("li")
+    //li.innerHTML = `${addlang}`
+    //document.querySelector(".language").appendChild(li)
+    //}
+    //  himu("python")
+    //    himu("java")
+    //this method is lengthy beacuse of traversing the whole tree
+    let optiHimu = (addlang) => {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(addlang))
+        document.querySelector(".language").appendChild(li)
+    }
+    optiHimu("java")
+</script>
+
+</html>

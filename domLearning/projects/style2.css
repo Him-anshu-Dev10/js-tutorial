@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background-color: #0edf15;
+  text-align: center;
+}
+.container {
+  margin: 50px;
+  padding: 5px;
+}
+h1 {
+  color: rgb(40, 65, 29);
+  font-size: 2.5rem;
+}
+form {
+  margin: 20px;
+}
+form input {
+  margin-bottom: 5px;
+  color: black;
+}
+input:hover {
+  transform: scale(1.05);
+}
+button {
+  color: black;
+  margin-left: 100px;
+  height: 30px;
+  width: 65px;
+  border-radius: 8px;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.descrip h3 {
+  color: rgb(5, 20, 19);
+  margin: 5px;
+}
+.descrip p {
+  color: #092a0a;
+}

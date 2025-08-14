@@ -1,0 +1,67 @@
+/* Reset and base styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+/* Heading */
+h1 {
+  color: rgb(88, 56, 13);
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+
+/* Container for color buttons */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+/* Color buttons */
+.button {
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific colors */
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
+
+/* Instruction text */
+h2 {
+  text-align: center;
+  color: rgb(72, 42, 5);
+  margin-top: 20px;
+  font-size: 1.2rem;
+}

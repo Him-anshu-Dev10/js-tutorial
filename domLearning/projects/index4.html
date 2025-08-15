@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background change in per secs</title>
+</head>
+
+<body>
+    <h3>This is a site when u click on start button the background color automatically change per sec</h3>
+    <button id="start">Start</button>
+    <button id="stop"> Stop</button>
+</body>
+<script>
+    let intervalId = null; // consistent naam
+
+    function randomColorGenerator() {
+        let digit = "0123456789abcdef";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color += digit[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function changeColor() {
+        // Agar pehle se chal raha hai to pehle band karo
+        clearInterval(intervalId);
+
+        intervalId = setInterval(() => {
+            document.body.style.backgroundColor = randomColorGenerator();
+        }, 1000);
+    }
+
+    function stopChangeColor() {
+        clearInterval(intervalId);
+        intervalId = null; // reset so Start can work again
+    }
+
+    document.querySelector("#start").addEventListener("click", changeColor);
+    document.querySelector("#stop").addEventListener("click", stopChangeColor);
+</script>
+
+
+</html>

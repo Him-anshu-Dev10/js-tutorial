@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async usecase</title>
+</head>
+
+<body>
+    <h1>hello I am Himanshu Pokhriyal</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    //<!-- setTimeout(function () {
+    //  document.querySelector("h1").innerHTML = "Believe in Yourself"
+    //}, 2000) -->
+    //const moti = function () {
+    // document.querySelector("h1").innerHTML = "Believe in Yourself"
+    // <!-- }// -->
+    //  let changeMe = setTimeout(moti, 3000)
+    //    // for stoping this settimeout we use clearTimeout
+    // but we have more than one set timwout so we can store the refrence and add a event on it
+    //document.querySelector("#stop").addEventListener("click", function () {
+    //  clearTimeout(changeMe)
+    //console.log("stoppped")
+    //   })
+    let intervalId; // interval ka reference store karne ke liye
+
+    const Start = function () {
+        clearInterval(intervalId)
+        document.querySelector("#start").addEventListener("click", function () {
+            document.querySelector("h1").innerHTML = "Stay Motivated";
+            console.log("print");
+        });
+    };
+
+    // Interval start karo
+    intervalId = setInterval(Start, 3000);
+
+    // Stop button listener
+    const Stop = function () {
+        document.querySelector("#stop").addEventListener("click", function () {
+            clearInterval(intervalId); // interval ka ID use karo
+            console.log("stopped");
+        });
+    };
+
+    Stop(); // stop button listener activate karo
+
+</script>
+
+</html>
